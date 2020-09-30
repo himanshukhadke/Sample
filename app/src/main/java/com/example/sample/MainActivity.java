@@ -23,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
         items = findViewById(R.id.items);
         price = findViewById(R.id.price);
         order = (Button) findViewById(R.id.order_btn);
-        order.setOnClickListener(v -> updateItems());
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateItems();
+            }
+        });
     }
 
     private void updateItems() {
