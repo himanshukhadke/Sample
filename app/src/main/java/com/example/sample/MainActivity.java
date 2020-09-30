@@ -11,7 +11,7 @@ import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-    public int count = 4;
+    public int count = 0;
     Button order;
     TextView items;
     TextView price;
